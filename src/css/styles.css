@@ -1,0 +1,23 @@
+.app {
+  margin-top: 50px;
+}
+
+.task--completed {
+  text-decoration: line-through;
+}
+
+.task--buttons {
+  text-align: right;
+}
+
+.card {
+  box-shadow: 3px 3px 10px #909090;
+}
+
+.card-header {
+  height: 50px;
+}
+
+.card-body {
+  height: calc(100vh - 200px);
+}
