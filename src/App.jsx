@@ -64,20 +64,19 @@ function App() {
                   <input
                     className="form-control"
                     value={value}
+                    placeholder="Write your task here!"
                     onChange={(e) => handleChange(e)}
                   />
                 </Col>
                 <Col xs="3" className="task--buttons">
-                  {!!value && (
-                    <TooltipButton
-                      variant="outline-primary"
-                      onClick={() => addTask()}
-                      tooltip="Add"
-                      disabled={!value}
-                    >
-                      <FaPlus />
-                    </TooltipButton>
-                  )}
+                  <TooltipButton
+                    variant="outline-primary"
+                    onClick={() => addTask()}
+                    tooltip="Add"
+                    disabled={!value}
+                  >
+                    <FaPlus />
+                  </TooltipButton>
                 </Col>
               </Row>
             </Card.Footer>
